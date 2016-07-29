@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor yellowColor];
+    UIImageView *iconIV       = [[UIImageView alloc]initWithFrame:CGRectMake(self.view.bounds.size.width/2-50, self.view.bounds.size.height/2-50, 100, 100)];
+    iconIV.image = [UIImage imageNamed:@"icon"];
+    [self.view addSubview:iconIV];
 }
 
 - (void)didReceiveMemoryWarning {
